@@ -14,7 +14,7 @@ function renderCountries(countries) {
   countryList.innerHTML = '';
   countries.forEach(country => {
     const { name, flags } = country;
-    const flagImg = `<img src="${flags.svg}" alt="Flag of ${name}" width="40">`;
+    const flagImg = `<img src="${flags.svg}" alt="Flag of ${name}" width="60">`;
     const countryItem = document.createElement('li');
     countryItem.classList.add('country-list__item');
     countryItem.innerHTML = `${flagImg} ${name}`;
